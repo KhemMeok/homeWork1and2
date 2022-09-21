@@ -44,34 +44,43 @@ public class Application {
 	public static void main(String[] args) {
 
 		People[] people = people();
-//		ApplicationService.showLine("list all people");
-//		Stream<People> s = Stream.of(people);
-//		s.forEach(a -> System.out.println(a));
-//
-//		ApplicationService.showLine("showPeopleMaleAndFemale");
-//		ApplicationService.showPeopleMaleAndFemale(people);
-//
-//		ApplicationService.showLine("showPeoPleHasPetsMoreThanOne");
-//		ApplicationService.showPeoPleHasPetsMoreThanOne(people, 1);
-//
-//		ApplicationService.showLine("showPeoplePetsCat");
-//		ApplicationService.showPeoplePetsCat(people,PetType.Cat);
-//
-//		ApplicationService.showLine("showMeleAndFemalePetCat");
-//		ApplicationService.showMeleAndFemalePetCat(people,Cat);
-//
-//		ApplicationService.showLine("showPeoPleNoPet");
-//		ApplicationService.showPeoPleNoPet(people);
-//
-//		ApplicationService.showLine("showMinAgeOfPeople");
-//		ApplicationService.showMinAgeOfPeople(people);
+		ApplicationService.showLine("list all people");
+		Stream<People> s = Stream.of(people);
+		s.forEach(a -> System.out.println(a));
+
+		ApplicationService.showLine("showPeopleMaleAndFemale");
+		ApplicationService.showPeopleMaleAndFemale(people);
+
+		ApplicationService.showLine("showPeoPleHasPetsMoreThanOne");
+		ApplicationService.showPeoPleHasPetsMoreThanOne(people, 1);
+
+		ApplicationService.showLine("showPeoplePetsCat");
+		ApplicationService.showPeoplePetsCat(people,PetType.Cat);
+
+		ApplicationService.showLine("showMeleAndFemalePetCat");
+		ApplicationService.showMeleAndFemalePetCat(people,Cat);
+
+		ApplicationService.showLine("showPeoPleNoPet");
+		ApplicationService.showPeoPleNoPet(people);
+
+		ApplicationService.showLine("showMinAgeOfPeople");
+		ApplicationService.showMinAgeOfPeople(people);
 		
-		//ApplicationService.showTypeOfPet(people);
-	//	ApplicationService.showGroupByAge(people);
-	//	ApplicationService.showPeopleAgeUpper18andLower18(people);
-	//	ApplicationService.showPeopleNameByAge(people);
+		ApplicationService.showLine("showTypeOfPet");
+		ApplicationService.showTypeOfPet(people);
 		
+		ApplicationService.showLine("showGroupByAge");
+		ApplicationService.showGroupByAge(people);
+		
+		ApplicationService.showLine("showPeopleAgeUpper18andLower18");
+		ApplicationService.showPeopleAgeUpper18andLower18(people);
+		
+		ApplicationService.showLine("showPeopleNameByAge");
+		ApplicationService.showPeopleNameByAge(people);
+		
+		ApplicationService.showLine("showPeopleNameAndAgeHasCatNoDogFemaleAge19to21");
 		ApplicationService.showPeopleNameAndAgeHasCatNoDogFemaleAge19to21(people);
+		
 		
 		 
 
